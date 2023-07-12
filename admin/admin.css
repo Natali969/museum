@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+#container {
+  width: 1500px;
+  margin: auto;
+}
+
+.menu{
+  background: white;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  min-width: 300px;
+  padding: 10px;
+  margin: 20px 0 0 100px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.menu button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+table td {
+  overflow: hidden;
+}
+
+table td:nth-of-type(1) {
+    width: 450px;
+    text-align: center;
+}
+
+table td:nth-of-type(2) {
+    width: 450px;
+    text-align: center;
+}
+
+.add{
+    background: #4CAF50;
+}
+.add:hover,.add:active,.add:focus {
+  background: #43A047;
+}
+
+.del{
+    background: #df2d23;
+}
+.del:hover,.del:active,.del:focus {
+  background: #c91414;
+}
+
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: rgb(141,194,111);
+  background: linear-gradient(90deg, rgb(93, 150, 59) 0%, rgb(75, 186, 118) 100%);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+.menu .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
