@@ -1,0 +1,270 @@
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: rgb(141,194,111);
+  background: linear-gradient(90deg, rgb(93, 150, 59) 0%, rgb(75, 186, 118) 100%);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+.menu{
+  background: white;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 20px;
+  max-width: 220px;
+  padding: 10px;
+  border-radius: 10px;
+  /* text-align: center; */
+}
+
+.alert {
+  text-align: center;
+  background: white;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 20px;
+  left: 400px;
+  max-width: 220px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.delete_photo{
+  background: white;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  left: 85%;
+  top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 4px;
+	background-color: #419152;
+	line-height: 22px;
+	height: 40px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: background-color 0.2s;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 100px;
+	height: 0;
+}
+ 
+/* Focus */
+.input-file input[type=file]:focus + span {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover/active */
+.input-file:hover span {
+	background-color: #59be6e;
+}
+.input-file:active span {
+	background-color: #2E703A;
+}
+ 
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+	background-color: #eee;
+}
+
+.menu button,
+.delete_photo button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.menu button:hover,.form button:active,.form button:focus,
+.delete_photo button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+
+.menu .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+  text-align: center;
+}
+.message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+select#category {
+  width: 150px;
+  height: auto;
+  appearance: none;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+  color: #28692a;
+  padding: 15px;
+  border-color: #4CAF50;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+
+  background: url("green_arrow.png") 96% / 20% no-repeat #c3f0a8;
+}
+
+select#category:hover,
+select#category:active,
+select#category:focus-within {
+  border: none;
+  background: url("gre.png") 96% / 30% no-repeat #83c885;
+  color: white;
+}
+
+ /* Слайдер: */
+.slider{
+  top: 40px;
+  max-width: 900px;
+  left: 250px;
+  /* Положение элемента устанавливается относительно его исходной позиции: */
+  position: relative;
+  margin-bottom: 60px;
+  /* Центрируем по горизонтали: */
+  /* margin: auto; */
+}
+
+/* Картинка масштабируется по отношению к родительскому элементу: */
+.slider .item img {
+  /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
+  object-fit: scale-down;
+  width: 100%;
+  max-height: 1000px;
+}
+
+table {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  left: 250px;
+}
+/* Кнопки назад и вперёд: */
+.slider .previous, .slider .next {
+  /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+  cursor: pointer;
+  /* Положение элемента задаётся относительно границ браузера: */
+  border: 1px solid black; /* Параметры рамки */
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  /* Оформление самих кнопок: */
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  /* Плавное появление фона при наведении курсора: */
+  transition: 0.6s ease;
+  /* Скругление границ: */
+  border-radius: 0 3px 3px 0;
+}
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора на кнопки добавляем фон кнопок: */
+.slider .previous:hover,
+.slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация слайдов: */
+.slider .item {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  text-align: center;
+}
+@keyframes fade {
+  /* Устанавливаем и изменяем степень прозрачности: */
+  from {
+      opacity: 0.4
+  }
+  to {
+      opacity: 1
+  }
+}
+
+.slider .item button {
+  background: #df2d23;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  width: 200px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
+  /* object-fit: scale-down;
+  width: 100%;
+  max-height: 1000px; */
+}
+
+.slider .item button:hover,.slider .item button:active,.slider .item button:focus {
+  background: #c91414;
+}
+
+.navigation,
+.navigation_book {
+  position: relative;
+  top: 400px;
+}
+
+.navigation {
+  width: 150px;
+}
+.navigation_book{
+  right: 10px;
+  width: 200px;
+}
+
+label#no_photo {
+  background-color: white;
+  padding: 10px;
+  left: 400px;
+  position: relative;
+  border-radius: 10px;
+}
